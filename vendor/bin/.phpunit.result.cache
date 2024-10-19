@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Unit\\CadastrarUsuarioTest::testCadastrarUsuario":4,"Tests\\Unit\\CadastrarFerramentaTest::testCadastrarFerramenta":4},"times":{"Tests\\Unit\\CadastrarUsuarioTest::testCadastrarUsuario":0.098,"Tests\\Unit\\CadastrarFerramentaTest::testCadastrarFerramenta":0.006}}
