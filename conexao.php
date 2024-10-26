@@ -1,10 +1,18 @@
-
 <?php
-define('HOST', 'localhost');
-define('USUARIO', 'root');
-define('SENHA', '');
-define('DB', 'projeto');
- 
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
-?>
 
+$host = "mysql995.umbler.com";
+$user = "cadferramentas";
+$pass = "ocultado";
+$dbname = "cadferramentas";
+//$port = 41890;
+
+try{
+    //Conexão com a porta
+    //$conn = new PDO("mysql:host=$host;port=$port;dbname=" . $dbname, $user, $pass);
+
+    //Conexão sem a porta
+    $conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
+    //echo "Conexão com banco de dados realizado com sucesso!";
+}catch(PDOException $err){
+    //echo "Erro: Conexão com banco de dados não realizado com sucesso. Erro gerado " . $err->getMessage();
+}
